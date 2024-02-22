@@ -19,8 +19,8 @@ function AccountOperations() {
 
   function handleDeposit() {
     if (depositAmount < 1) return;
-    // dispatch(deposit(depositAmount, currency));
-    dispatch(deposit(depositAmount));
+    dispatch(deposit(depositAmount, currency));
+    // dispatch(deposit(depositAmount));
     setDepositAmount("");
     setCurrency("USD");
   }
